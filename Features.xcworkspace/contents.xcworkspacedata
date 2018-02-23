@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Features">
+      <FileRef
+         location = "group:Appointments/Appointments.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Contacts/Contacts.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:FeaturesKit/FeaturesKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/Features.xcodeproj">
+   </FileRef>
+</Workspace>
