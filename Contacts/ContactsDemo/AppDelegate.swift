@@ -1,19 +1,25 @@
 // (ↄ) COPYLEFT ALL WRONGS RESERVED
 
 import UIKit
+import Kontacts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
   var window: UIWindow?
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+
+    window = UIWindow(frame: UIScreen.main.bounds)
+    window!.rootViewController = Feature.storyboard!.instantiateInitialViewController()
+
     let splitViewController = window!.rootViewController as! UISplitViewController
     let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
     splitViewController.delegate = self
+
+    self.window?.makeKeyAndVisible()
     return true
   }
 

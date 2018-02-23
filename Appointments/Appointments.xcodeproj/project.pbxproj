@@ -10,7 +10,6 @@
 		E8C6116B203FC3A3004F96E3 /* Appointments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61161203FC3A3004F96E3 /* Appointments.framework */; };
 		E8C61170203FC3A3004F96E3 /* AppointmentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C6116F203FC3A3004F96E3 /* AppointmentsTests.swift */; };
 		E8C61172203FC3A3004F96E3 /* Appointments.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C61164203FC3A3004F96E3 /* Appointments.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8C611A0203FC418004F96E3 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611A1203FC418004F96E3 /* FeaturesKit.framework */; };
 		E8C611A6203FC614004F96E3 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A5203FC614004F96E3 /* Feature.swift */; };
 		E8C611CA203FEB0B004F96E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611C9203FEB0B004F96E3 /* AppDelegate.swift */; };
 		E8C611CC203FEB0B004F96E3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611CB203FEB0B004F96E3 /* MasterViewController.swift */; };
@@ -18,6 +17,8 @@
 		E8C611D1203FEB0B004F96E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611CF203FEB0B004F96E3 /* Main.storyboard */; };
 		E8C611D3203FEB0B004F96E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C611D2203FEB0B004F96E3 /* Assets.xcassets */; };
 		E8C611D6203FEB0B004F96E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611D4203FEB0B004F96E3 /* LaunchScreen.storyboard */; };
+		E8C611F4203FED3D004F96E3 /* Appointments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61161203FC3A3004F96E3 /* Appointments.framework */; };
+		E8C611FD203FEEF3004F96E3 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611FE203FEEF3004F96E3 /* FeaturesKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		E8C6116A203FC3A3004F96E3 /* AppointmentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppointmentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C6116F203FC3A3004F96E3 /* AppointmentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTests.swift; sourceTree = "<group>"; };
 		E8C61171203FC3A3004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8C611A1203FC418004F96E3 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611A5203FC614004F96E3 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		E8C611C7203FEB0B004F96E3 /* AppointmentsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppointmentsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611C9203FEB0B004F96E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +47,7 @@
 		E8C611D2203FEB0B004F96E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C611D5203FEB0B004F96E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8C611D7203FEB0B004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C611FE203FEEF3004F96E3 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C611A0203FC418004F96E3 /* FeaturesKit.framework in Frameworks */,
+				E8C611FD203FEEF3004F96E3 /* FeaturesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C611F4203FED3D004F96E3 /* Appointments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +121,7 @@
 		E8C6119F203FC418004F96E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8C611A1203FC418004F96E3 /* FeaturesKit.framework */,
+				E8C611FE203FEEF3004F96E3 /* FeaturesKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

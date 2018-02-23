@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E8C61184203FC3AF004F96E3"
-               BuildableName = "Contacts.framework"
-               BlueprintName = "Contacts"
+               BuildableName = "Kontacts.framework"
+               BlueprintName = "Kontacts"
                ReferencedContainer = "container:Contacts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E8C61184203FC3AF004F96E3"
-            BuildableName = "Contacts.framework"
-            BlueprintName = "Contacts"
+            BuildableName = "Kontacts.framework"
+            BlueprintName = "Kontacts"
             ReferencedContainer = "container:Contacts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,8 +67,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E8C61184203FC3AF004F96E3"
-            BuildableName = "Contacts.framework"
-            BlueprintName = "Contacts"
+            BuildableName = "Kontacts.framework"
+            BlueprintName = "Kontacts"
             ReferencedContainer = "container:Contacts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E8C61184203FC3AF004F96E3"
-            BuildableName = "Contacts.framework"
-            BlueprintName = "Contacts"
+            BuildableName = "Kontacts.framework"
+            BlueprintName = "Kontacts"
             ReferencedContainer = "container:Contacts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

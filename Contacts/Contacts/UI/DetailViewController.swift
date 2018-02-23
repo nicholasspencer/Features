@@ -2,9 +2,9 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+public class DetailViewController: UIViewController {
 
-  @IBOutlet weak var detailDescriptionLabel: UILabel!
+  @IBOutlet public weak var detailDescriptionLabel: UILabel!
 
 
   func configureView() {
@@ -16,18 +16,18 @@ class DetailViewController: UIViewController {
     }
   }
 
-  override func viewDidLoad() {
+  public override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     configureView()
   }
 
-  override func didReceiveMemoryWarning() {
+  public override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
 
-  var detailItem: NSDate? {
+  public var detailItem: NSDate? {
     didSet {
         // Update the view.
         configureView()

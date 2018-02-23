@@ -3,13 +3,13 @@
 import Foundation
 import FeaturesKit
 
-import Contacts
+import Kontacts
 import Appointments
 
 final class FeaturesCoordinator: Coordinator, CoordinatorDelegate {
-  lazy var contactsFeatureDelegate = Contacts.FeatureDelegate()
-  lazy var contactsFeature: Contacts.Feature = {
-    let contactsFeature = Contacts.Feature()
+  lazy var contactsFeatureDelegate = Kontacts.FeatureDelegate()
+  lazy var contactsFeature: Kontacts.Feature = {
+    let contactsFeature = Kontacts.Feature()
     contactsFeature.featureDelegate = contactsFeatureDelegate
     contactsFeature.coordinatorDelegate = self
     return contactsFeature

@@ -14,6 +14,7 @@
 		E806E49A203FA60500C71008 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E499203FA60500C71008 /* Coordinator.swift */; };
 		E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611AE203FE69A004F96E3 /* Contact.swift */; };
 		E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611B0203FE6DD004F96E3 /* Appointment.swift */; };
+		E8C61204203FF4A3004F96E3 /* StoryboardRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61203203FF4A3004F96E3 /* StoryboardRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		E806E499203FA60500C71008 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E8C611AE203FE69A004F96E3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		E8C611B0203FE6DD004F96E3 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		E8C61203203FF4A3004F96E3 /* StoryboardRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				E806E499203FA60500C71008 /* Coordinator.swift */,
 				E806E495203FA4F200C71008 /* Feature.swift */,
+				E8C61203203FF4A3004F96E3 /* StoryboardRepresentable.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */,
+				E8C61204203FF4A3004F96E3 /* StoryboardRepresentable.swift in Sources */,
 				E806E49A203FA60500C71008 /* Coordinator.swift in Sources */,
 				E806E496203FA4F200C71008 /* Feature.swift in Sources */,
 				E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */,
