@@ -94,8 +94,8 @@
 		E806E494203FA4E200C71008 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				E806E495203FA4F200C71008 /* Feature.swift */,
 				E806E499203FA60500C71008 /* Coordinator.swift */,
+				E806E495203FA4F200C71008 /* Feature.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";

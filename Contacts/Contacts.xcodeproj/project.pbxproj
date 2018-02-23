@@ -11,6 +11,7 @@
 		E8C61194203FC3AF004F96E3 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61193203FC3AF004F96E3 /* ContactsTests.swift */; };
 		E8C61196203FC3AF004F96E3 /* Contacts.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C61188203FC3AF004F96E3 /* Contacts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8C611A3203FC426004F96E3 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611A4203FC426004F96E3 /* FeaturesKit.framework */; };
+		E8C611A8203FC710004F96E3 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A7203FC710004F96E3 /* Feature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		E8C61193203FC3AF004F96E3 /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
 		E8C61195203FC3AF004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C611A4203FC426004F96E3 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C611A7203FC710004F96E3 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		E8C61187203FC3AF004F96E3 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				E8C611A7203FC710004F96E3 /* Feature.swift */,
 				E8C61188203FC3AF004F96E3 /* Contacts.h */,
 				E8C61189203FC3AF004F96E3 /* Info.plist */,
 			);
@@ -160,6 +163,7 @@
 				TargetAttributes = {
 					E8C61184203FC3AF004F96E3 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					E8C6118D203FC3AF004F96E3 = {
@@ -208,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C611A8203FC710004F96E3 /* Feature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +351,7 @@
 		E8C6119A203FC3AF004F96E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -359,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasspencer.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +374,7 @@
 		E8C6119B203FC3AF004F96E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -388,6 +396,7 @@
 		E8C6119D203FC3AF004F96E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D82YXVJWMT;
 				INFOPLIST_FILE = ContactsTests/Info.plist;
@@ -402,6 +411,7 @@
 		E8C6119E203FC3AF004F96E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D82YXVJWMT;
 				INFOPLIST_FILE = ContactsTests/Info.plist;
