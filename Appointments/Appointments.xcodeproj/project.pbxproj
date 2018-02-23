@@ -12,6 +12,12 @@
 		E8C61172203FC3A3004F96E3 /* Appointments.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C61164203FC3A3004F96E3 /* Appointments.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8C611A0203FC418004F96E3 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611A1203FC418004F96E3 /* FeaturesKit.framework */; };
 		E8C611A6203FC614004F96E3 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A5203FC614004F96E3 /* Feature.swift */; };
+		E8C611CA203FEB0B004F96E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611C9203FEB0B004F96E3 /* AppDelegate.swift */; };
+		E8C611CC203FEB0B004F96E3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611CB203FEB0B004F96E3 /* MasterViewController.swift */; };
+		E8C611CE203FEB0B004F96E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611CD203FEB0B004F96E3 /* DetailViewController.swift */; };
+		E8C611D1203FEB0B004F96E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611CF203FEB0B004F96E3 /* Main.storyboard */; };
+		E8C611D3203FEB0B004F96E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C611D2203FEB0B004F96E3 /* Assets.xcassets */; };
+		E8C611D6203FEB0B004F96E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611D4203FEB0B004F96E3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,14 @@
 		E8C61171203FC3A3004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C611A1203FC418004F96E3 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611A5203FC614004F96E3 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		E8C611C7203FEB0B004F96E3 /* AppointmentsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppointmentsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C611C9203FEB0B004F96E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8C611CB203FEB0B004F96E3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		E8C611CD203FEB0B004F96E3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E8C611D0203FEB0B004F96E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8C611D2203FEB0B004F96E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8C611D5203FEB0B004F96E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8C611D7203FEB0B004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8C611C4203FEB0B004F96E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +81,7 @@
 			children = (
 				E8C61163203FC3A3004F96E3 /* Appointments */,
 				E8C6116E203FC3A3004F96E3 /* AppointmentsTests */,
+				E8C611C8203FEB0B004F96E3 /* AppointmentsDemo */,
 				E8C61162203FC3A3004F96E3 /* Products */,
 				E8C6119F203FC418004F96E3 /* Frameworks */,
 			);
@@ -70,6 +92,7 @@
 			children = (
 				E8C61161203FC3A3004F96E3 /* Appointments.framework */,
 				E8C6116A203FC3A3004F96E3 /* AppointmentsTests.xctest */,
+				E8C611C7203FEB0B004F96E3 /* AppointmentsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +122,20 @@
 				E8C611A1203FC418004F96E3 /* FeaturesKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C611C8203FEB0B004F96E3 /* AppointmentsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8C611C9203FEB0B004F96E3 /* AppDelegate.swift */,
+				E8C611CB203FEB0B004F96E3 /* MasterViewController.swift */,
+				E8C611CD203FEB0B004F96E3 /* DetailViewController.swift */,
+				E8C611CF203FEB0B004F96E3 /* Main.storyboard */,
+				E8C611D2203FEB0B004F96E3 /* Assets.xcassets */,
+				E8C611D4203FEB0B004F96E3 /* LaunchScreen.storyboard */,
+				E8C611D7203FEB0B004F96E3 /* Info.plist */,
+			);
+			path = AppointmentsDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +188,23 @@
 			productReference = E8C6116A203FC3A3004F96E3 /* AppointmentsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E8C611C6203FEB0B004F96E3 /* AppointmentsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C611DA203FEB0B004F96E3 /* Build configuration list for PBXNativeTarget "AppointmentsDemo" */;
+			buildPhases = (
+				E8C611C3203FEB0B004F96E3 /* Sources */,
+				E8C611C4203FEB0B004F96E3 /* Frameworks */,
+				E8C611C5203FEB0B004F96E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppointmentsDemo;
+			productName = AppointmentsDemo;
+			productReference = E8C611C7203FEB0B004F96E3 /* AppointmentsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +224,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					E8C611C6203FEB0B004F96E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E8C6115B203FC3A3004F96E3 /* Build configuration list for PBXProject "Appointments" */;
@@ -178,6 +236,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E8C61157203FC3A3004F96E3;
 			productRefGroup = E8C61162203FC3A3004F96E3 /* Products */;
@@ -186,6 +245,7 @@
 			targets = (
 				E8C61160203FC3A3004F96E3 /* Appointments */,
 				E8C61169203FC3A3004F96E3 /* AppointmentsTests */,
+				E8C611C6203FEB0B004F96E3 /* AppointmentsDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +262,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C611C5203FEB0B004F96E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C611D6203FEB0B004F96E3 /* LaunchScreen.storyboard in Resources */,
+				E8C611D3203FEB0B004F96E3 /* Assets.xcassets in Resources */,
+				E8C611D1203FEB0B004F96E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +294,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8C611C3203FEB0B004F96E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C611CE203FEB0B004F96E3 /* DetailViewController.swift in Sources */,
+				E8C611CC203FEB0B004F96E3 /* MasterViewController.swift in Sources */,
+				E8C611CA203FEB0B004F96E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -233,6 +313,25 @@
 			targetProxy = E8C6116C203FC3A3004F96E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8C611CF203FEB0B004F96E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8C611D0203FEB0B004F96E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8C611D4203FEB0B004F96E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8C611D5203FEB0B004F96E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8C61173203FC3A3004F96E3 /* Debug */ = {
@@ -423,6 +522,36 @@
 			};
 			name = Release;
 		};
+		E8C611D8203FEB0B004F96E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D82YXVJWMT;
+				INFOPLIST_FILE = AppointmentsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasspencer.AppointmentsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8C611D9203FEB0B004F96E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D82YXVJWMT;
+				INFOPLIST_FILE = AppointmentsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasspencer.AppointmentsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +578,15 @@
 			buildConfigurations = (
 				E8C61179203FC3A3004F96E3 /* Debug */,
 				E8C6117A203FC3A3004F96E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C611DA203FEB0B004F96E3 /* Build configuration list for PBXNativeTarget "AppointmentsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C611D8203FEB0B004F96E3 /* Debug */,
+				E8C611D9203FEB0B004F96E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
