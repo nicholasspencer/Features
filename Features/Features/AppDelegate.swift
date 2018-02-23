@@ -6,12 +6,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationCoordinatorDelegate{
 
   var window: UIWindow?
+  
   lazy var applicationCoordinator: ApplicationCoordinator = {
     let applicationCoordinator = ApplicationCoordinator()
     applicationCoordinator.delegate = self
     return applicationCoordinator
   }()
-
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.

@@ -12,6 +12,8 @@
 		E806E48B203F986B00C71008 /* FeaturesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E806E47D203F986B00C71008 /* FeaturesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E806E496203FA4F200C71008 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E495203FA4F200C71008 /* Feature.swift */; };
 		E806E49A203FA60500C71008 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E499203FA60500C71008 /* Coordinator.swift */; };
+		E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611AE203FE69A004F96E3 /* Contact.swift */; };
+		E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611B0203FE6DD004F96E3 /* Appointment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		E806E48A203F986B00C71008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E806E495203FA4F200C71008 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		E806E499203FA60500C71008 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E8C611AE203FE69A004F96E3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		E8C611B0203FE6DD004F96E3 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		E806E47C203F986B00C71008 /* FeaturesKit */ = {
 			isa = PBXGroup;
 			children = (
+				E8C611AD203FE681004F96E3 /* Models */,
 				E806E494203FA4E200C71008 /* Support */,
 				E806E47D203F986B00C71008 /* FeaturesKit.h */,
 				E806E47E203F986B00C71008 /* Info.plist */,
@@ -98,6 +103,15 @@
 				E806E495203FA4F200C71008 /* Feature.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		E8C611AD203FE681004F96E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8C611B0203FE6DD004F96E3 /* Appointment.swift */,
+				E8C611AE203FE69A004F96E3 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */,
 				E806E49A203FA60500C71008 /* Coordinator.swift in Sources */,
 				E806E496203FA4F200C71008 /* Feature.swift in Sources */,
+				E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

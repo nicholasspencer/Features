@@ -7,6 +7,4 @@ public final class FeatureDelegate: FeaturesKit.FeatureDelegate {
   public init() {}
 }
 
-public final class Feature: FeaturesKit.Feature {
-  public override init() {}
-}
+public final class Feature: FeaturesKit.Feature {}

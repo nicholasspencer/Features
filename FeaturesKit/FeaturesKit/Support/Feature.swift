@@ -5,7 +5,7 @@ import Foundation
 public protocol FeatureDelegate: class {}
 
 open class Feature: Coordinator {
-  public weak var featureDelegate: FeatureDelegate?
+  open weak var featureDelegate: FeatureDelegate?
 
   public init() {}
 }
