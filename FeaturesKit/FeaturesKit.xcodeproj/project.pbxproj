@@ -12,9 +12,10 @@
 		E806E48B203F986B00C71008 /* FeaturesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E806E47D203F986B00C71008 /* FeaturesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E806E496203FA4F200C71008 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E495203FA4F200C71008 /* Feature.swift */; };
 		E806E49A203FA60500C71008 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E499203FA60500C71008 /* Coordinator.swift */; };
+		E84630162041092A0009E2BC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E8463015204109290009E2BC /* libsqlite3.tbd */; };
 		E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611AE203FE69A004F96E3 /* Contact.swift */; };
 		E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611B0203FE6DD004F96E3 /* Appointment.swift */; };
-		E8C61204203FF4A3004F96E3 /* StoryboardRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61203203FF4A3004F96E3 /* StoryboardRepresentable.swift */; };
+		E8C61204203FF4A3004F96E3 /* IBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61203203FF4A3004F96E3 /* IBRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +37,10 @@
 		E806E48A203F986B00C71008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E806E495203FA4F200C71008 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		E806E499203FA60500C71008 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E8463015204109290009E2BC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E8C611AE203FE69A004F96E3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		E8C611B0203FE6DD004F96E3 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
-		E8C61203203FF4A3004F96E3 /* StoryboardRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentable.swift; sourceTree = "<group>"; };
+		E8C61203203FF4A3004F96E3 /* IBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84630162041092A0009E2BC /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				E806E47C203F986B00C71008 /* FeaturesKit */,
 				E806E487203F986B00C71008 /* FeaturesKitTests */,
 				E806E47B203F986B00C71008 /* Products */,
+				E8463014204109290009E2BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +107,17 @@
 			children = (
 				E806E499203FA60500C71008 /* Coordinator.swift */,
 				E806E495203FA4F200C71008 /* Feature.swift */,
-				E8C61203203FF4A3004F96E3 /* StoryboardRepresentable.swift */,
+				E8C61203203FF4A3004F96E3 /* IBRepresentable.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		E8463014204109290009E2BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8463015204109290009E2BC /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E8C611AD203FE681004F96E3 /* Models */ = {
@@ -229,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */,
-				E8C61204203FF4A3004F96E3 /* StoryboardRepresentable.swift in Sources */,
+				E8C61204203FF4A3004F96E3 /* IBRepresentable.swift in Sources */,
 				E806E49A203FA60500C71008 /* Coordinator.swift in Sources */,
 				E806E496203FA4F200C71008 /* Feature.swift in Sources */,
 				E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */,

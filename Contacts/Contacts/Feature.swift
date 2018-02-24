@@ -9,9 +9,8 @@ public final class FeatureDelegate: FeaturesKit.FeatureDelegate {
 
 public final class Feature: FeaturesKit.Feature {}
 
-extension Feature: StoryboardRepresentable {
-  public static var storyboard: UIStoryboard? {
-    return UIStoryboard(name: "Main", bundle: Bundle(for: self))
+extension Feature: IBRepresentable {
+  public static var storyboardName: String? {
+    return "Main"
   }
 }
-
