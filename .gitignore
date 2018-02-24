@@ -1,4 +1,11 @@
-# Created by https://www.gitignore.io/api/macos,xcode,objc,swift
+# Created by https://www.gitignore.io/api/macos,xcode,swift,carthage
+
+### Carthage ###
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+Carthage/Checkouts
+Carthage/Build
 
 ### macOS ###
 *.DS_Store
@@ -69,6 +76,10 @@ playground.xcworkspace
 # Package.pins
 .build/
 
+# CocoaPods - Refactored to standalone file
+
+# Carthage - Refactored to standalone file
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
@@ -99,4 +110,5 @@ fastlane/test_output
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-# End of https://www.gitignore.io/api/macos,xcode,objc,swift
+
+# End of https://www.gitignore.io/api/macos,xcode,swift,carthage
