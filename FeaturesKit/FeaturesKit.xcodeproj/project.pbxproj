@@ -12,10 +12,10 @@
 		E806E48B203F986B00C71008 /* FeaturesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E806E47D203F986B00C71008 /* FeaturesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E806E496203FA4F200C71008 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E495203FA4F200C71008 /* Feature.swift */; };
 		E806E49A203FA60500C71008 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E499203FA60500C71008 /* Coordinator.swift */; };
-		E84630162041092A0009E2BC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E8463015204109290009E2BC /* libsqlite3.tbd */; };
 		E8C611AF203FE69A004F96E3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611AE203FE69A004F96E3 /* Contact.swift */; };
 		E8C611B1203FE6DD004F96E3 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611B0203FE6DD004F96E3 /* Appointment.swift */; };
 		E8C61204203FF4A3004F96E3 /* IBRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61203203FF4A3004F96E3 /* IBRepresentable.swift */; };
+		E8D13877204127D700279683 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D138732041217100279683 /* SQLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,10 @@
 		E806E48A203F986B00C71008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E806E495203FA4F200C71008 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		E806E499203FA60500C71008 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		E8463015204109290009E2BC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E8C611AE203FE69A004F96E3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		E8C611B0203FE6DD004F96E3 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		E8C61203203FF4A3004F96E3 /* IBRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBRepresentable.swift; sourceTree = "<group>"; };
+		E8D138732041217100279683 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = ../Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E84630162041092A0009E2BC /* libsqlite3.tbd in Frameworks */,
+				E8D13877204127D700279683 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 		E8463014204109290009E2BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8463015204109290009E2BC /* libsqlite3.tbd */,
+				E8D138732041217100279683 /* SQLite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +148,7 @@
 			buildConfigurationList = E806E48E203F986B00C71008 /* Build configuration list for PBXNativeTarget "FeaturesKit" */;
 			buildPhases = (
 				E806E475203F986B00C71008 /* Sources */,
+				E8D1387820412CCC00279683 /* ShellScript */,
 				E806E476203F986B00C71008 /* Frameworks */,
 				E806E477203F986B00C71008 /* Headers */,
 				E806E478203F986B00C71008 /* Resources */,
@@ -235,6 +236,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E8D1387820412CCC00279683 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/SQLite.framework",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_DIR)/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E806E475203F986B00C71008 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,6 +321,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -362,6 +382,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

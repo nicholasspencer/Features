@@ -4,6 +4,9 @@
    <FileRef
       location = "group:Cartfile">
    </FileRef>
+   <FileRef
+      location = "group:Carthage">
+   </FileRef>
    <Group
       location = "container:"
       name = "Features">
