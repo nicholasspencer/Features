@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E88CA57420409947008F39D8 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88CA57520409948008F39D8 /* FeaturesKit.framework */; };
+		E8B4296B2041E8CC0052B09C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */; };
 		E8C6118F203FC3AF004F96E3 /* Kontacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61185203FC3AF004F96E3 /* Kontacts.framework */; };
 		E8C61194203FC3AF004F96E3 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61193203FC3AF004F96E3 /* ContactsTests.swift */; };
 		E8C61196203FC3AF004F96E3 /* Contacts.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C61188203FC3AF004F96E3 /* Contacts.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E8B42977204219930052B09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C6117C203FC3AF004F96E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C61184203FC3AF004F96E3;
+			remoteInfo = Kontacts;
+		};
 		E8C61190203FC3AF004F96E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8C6117C203FC3AF004F96E3 /* Project object */;
@@ -34,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		E88CA57520409948008F39D8 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		E8C61185203FC3AF004F96E3 /* Kontacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kontacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C61188203FC3AF004F96E3 /* Contacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
 		E8C61189203FC3AF004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				E8C611E1203FEB36004F96E3 /* AppDelegate.swift */,
+				E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */,
 				E8C611EA203FEB36004F96E3 /* Assets.xcassets */,
 				E8C611EC203FEB36004F96E3 /* LaunchScreen.storyboard */,
 				E8C611EF203FEB36004F96E3 /* Info.plist */,
@@ -213,6 +223,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E8B42978204219930052B09C /* PBXTargetDependency */,
 			);
 			name = ContactsDemo;
 			productName = ContactsDemo;
@@ -315,12 +326,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C611E2203FEB36004F96E3 /* AppDelegate.swift in Sources */,
+				E8B4296B2041E8CC0052B09C /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E8B42978204219930052B09C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C61184203FC3AF004F96E3 /* Kontacts */;
+			targetProxy = E8B42977204219930052B09C /* PBXContainerItemProxy */;
+		};
 		E8C61191203FC3AF004F96E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E8C61184203FC3AF004F96E3 /* Kontacts */;
@@ -383,6 +400,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -443,6 +461,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

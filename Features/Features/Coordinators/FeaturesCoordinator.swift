@@ -3,21 +3,31 @@
 import Foundation
 import FeaturesKit
 
-import Kontacts
-import Appointments
+import class Kontacts.FeatureDelegate
+typealias ContactsFeatureDelegate = Kontacts.FeatureDelegate
+
+import class Kontacts.Feature
+typealias ContactsFeature = Kontacts.Feature
+
+import class Appointments.FeatureDelegate
+typealias AppointmentsFeature = Appointments.Feature
+
+import class Appointments.Feature
+typealias AppointmentsFeatureDelegate = Appointments.FeatureDelegate
+
 
 final class FeaturesCoordinator: Coordinator, CoordinatorDelegate {
-  lazy var contactsFeatureDelegate = Kontacts.FeatureDelegate()
-  lazy var contactsFeature: Kontacts.Feature = {
-    let contactsFeature = Kontacts.Feature()
+  lazy var contactsFeatureDelegate = ContactsFeatureDelegate()
+  lazy var contacts: ContactsFeature = {
+    let contactsFeature = ContactsFeature()
     contactsFeature.featureDelegate = contactsFeatureDelegate
     contactsFeature.coordinatorDelegate = self
     return contactsFeature
   }()
 
-  lazy var appointmentFeatureDelegate = Appointments.FeatureDelegate()
-  lazy var appointmentFeature: Appointments.Feature = {
-    let appointmentFeature = Appointments.Feature()
+  lazy var appointmentFeatureDelegate = AppointmentsFeatureDelegate()
+  lazy var appointmentFeature: AppointmentsFeature = {
+    let appointmentFeature = AppointmentsFeature()
     appointmentFeature.featureDelegate = appointmentFeatureDelegate
     appointmentFeature.coordinatorDelegate = self
     return appointmentFeature

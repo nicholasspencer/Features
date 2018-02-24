@@ -25,7 +25,7 @@ extension IBRepresentable {
 }
 
 extension IBRepresentable where Self: UIViewController {
-  public static var defaultInstantiation: Self? {
+  public static var storyboardRepresentation: Self? {
     guard let storyboardIdentifier = self.storyboardIdentifier else { return nil }
 
     return self.storyboard?.instantiateViewController(withIdentifier: storyboardIdentifier) as? Self ?? nil

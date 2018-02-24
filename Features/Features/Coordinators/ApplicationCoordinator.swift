@@ -11,5 +11,6 @@ final class ApplicationCoordinator: Coordinator {
   weak var delegate: ApplicationCoordinatorDelegate?
 
   var rootViewController: UIViewController?
+  
   lazy var featuresCoordinator = FeaturesCoordinator()
 }

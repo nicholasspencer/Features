@@ -1,1 +1,2 @@
+github "garriguv/SQLiteMigrationManager.swift" "0.3.0"
 github "stephencelis/SQLite.swift" "0.11.4"

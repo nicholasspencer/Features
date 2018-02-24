@@ -7,7 +7,11 @@ public struct Contact: Codable {
   
   public var name: String?
   public var address: String?
-  public var company: String?
+  public var phone: String?
 
   public var favorite: Bool = false
+}
+
+extension Contact: SQLitePersistable {
+  public typealias Storage = SQLiteDatabase
 }
