@@ -85,6 +85,7 @@
 		E806E47C203F986B00C71008 /* FeaturesKit */ = {
 			isa = PBXGroup;
 			children = (
+				E8D1387920412D5400279683 /* Persistence */,
 				E8C611AD203FE681004F96E3 /* Models */,
 				E806E494203FA4E200C71008 /* Support */,
 				E806E47D203F986B00C71008 /* FeaturesKit.h */,
@@ -127,6 +128,13 @@
 				E8C611AE203FE69A004F96E3 /* Contact.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E8D1387920412D5400279683 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
