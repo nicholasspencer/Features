@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E87816B62042662C0096733C /* DayPlannerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87816B72042662C0096733C /* DayPlannerKit.framework */; };
 		E88CA57420409947008F39D8 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88CA57520409948008F39D8 /* FeaturesKit.framework */; };
 		E8B4296B2041E8CC0052B09C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */; };
 		E8C6118F203FC3AF004F96E3 /* Kontacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61185203FC3AF004F96E3 /* Kontacts.framework */; };
 		E8C61194203FC3AF004F96E3 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61193203FC3AF004F96E3 /* ContactsTests.swift */; };
-		E8C61196203FC3AF004F96E3 /* Contacts.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C61188203FC3AF004F96E3 /* Contacts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8C611A8203FC710004F96E3 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A7203FC710004F96E3 /* Feature.swift */; };
 		E8C611E2203FEB36004F96E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611E1203FEB36004F96E3 /* AppDelegate.swift */; };
 		E8C611EB203FEB36004F96E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C611EA203FEB36004F96E3 /* Assets.xcassets */; };
 		E8C611EE203FEB36004F96E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611EC203FEB36004F96E3 /* LaunchScreen.storyboard */; };
 		E8C611F3203FED0D004F96E3 /* Kontacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61185203FC3AF004F96E3 /* Kontacts.framework */; };
 		E8C611FB203FEEEA004F96E3 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611FC203FEEEA004F96E3 /* FeaturesKit.framework */; };
-		E8C61200203FF2FC004F96E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611E5203FEB36004F96E3 /* DetailViewController.swift */; };
-		E8C61201203FF2FF004F96E3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611E3203FEB36004F96E3 /* MasterViewController.swift */; };
+		E8C61200203FF2FC004F96E3 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611E5203FEB36004F96E3 /* ContactViewController.swift */; };
+		E8C61201203FF2FF004F96E3 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611E3203FEB36004F96E3 /* ContactsViewController.swift */; };
 		E8C61205203FFA96004F96E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611E7203FEB36004F96E3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E87816B72042662C0096733C /* DayPlannerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DayPlannerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88CA57520409948008F39D8 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		E8C61185203FC3AF004F96E3 /* Kontacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kontacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8C61188203FC3AF004F96E3 /* Contacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
 		E8C61189203FC3AF004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C6118E203FC3AF004F96E3 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C61193203FC3AF004F96E3 /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 		E8C611A7203FC710004F96E3 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		E8C611DF203FEB36004F96E3 /* ContactsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611E1203FEB36004F96E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8C611E3203FEB36004F96E3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		E8C611E5203FEB36004F96E3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E8C611E3203FEB36004F96E3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		E8C611E5203FEB36004F96E3 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E8C611E8203FEB36004F96E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8C611EA203FEB36004F96E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C611ED203FEB36004F96E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87816B62042662C0096733C /* DayPlannerKit.framework in Frameworks */,
 				E88CA57420409947008F39D8 /* FeaturesKit.framework in Frameworks */,
 				E8C611F3203FED0D004F96E3 /* Kontacts.framework in Frameworks */,
 			);
@@ -116,7 +117,6 @@
 			children = (
 				E8C611FF203FF29E004F96E3 /* UI */,
 				E8C611A7203FC710004F96E3 /* Feature.swift */,
-				E8C61188203FC3AF004F96E3 /* Contacts.h */,
 				E8C61189203FC3AF004F96E3 /* Info.plist */,
 			);
 			path = Contacts;
@@ -134,6 +134,7 @@
 		E8C611A2203FC426004F96E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E87816B72042662C0096733C /* DayPlannerKit.framework */,
 				E88CA57520409948008F39D8 /* FeaturesKit.framework */,
 				E8C611FC203FEEEA004F96E3 /* FeaturesKit.framework */,
 			);
@@ -156,8 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				E8C611E7203FEB36004F96E3 /* Main.storyboard */,
-				E8C611E3203FEB36004F96E3 /* MasterViewController.swift */,
-				E8C611E5203FEB36004F96E3 /* DetailViewController.swift */,
+				E8C611E3203FEB36004F96E3 /* ContactsViewController.swift */,
+				E8C611E5203FEB36004F96E3 /* ContactViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -169,7 +170,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C61196203FC3AF004F96E3 /* Contacts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C611A8203FC710004F96E3 /* Feature.swift in Sources */,
-				E8C61200203FF2FC004F96E3 /* DetailViewController.swift in Sources */,
-				E8C61201203FF2FF004F96E3 /* MasterViewController.swift in Sources */,
+				E8C61200203FF2FC004F96E3 /* ContactViewController.swift in Sources */,
+				E8C61201203FF2FF004F96E3 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

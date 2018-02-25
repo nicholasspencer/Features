@@ -5,7 +5,7 @@ import Kontacts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationCoordinatorDelegate {
-
+  
   lazy var applicationCoordinator: ApplicationCoordinator = {
     let applicationCoordinator = ApplicationCoordinator()
     applicationCoordinator.coordinatorDelegate = self
@@ -13,9 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationCoordinatorDel
   }()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
     applicationCoordinator.presentApplication()
-    print(applicationCoordinator.database!)
     return true
   }
 

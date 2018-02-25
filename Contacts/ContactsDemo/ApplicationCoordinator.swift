@@ -3,12 +3,13 @@
 import Foundation
 import FeaturesKit
 
+import DayPlannerKit
 import Kontacts
 
 protocol ApplicationCoordinatorDelegate: CoordinatorDelegate {}
 
-final class ApplicationCoordinator: Coordinator, CoordinatorDelegate, UISplitViewControllerDelegate {
-  weak var coordinatorDelegate: ApplicationCoordinatorDelegate?
+final class ApplicationCoordinator: Coordinator {
+  var coordinatorDelegate: CoordinatorDelegate?
 
   lazy var database: SQLiteDatabase? = {
     guard
@@ -23,16 +24,18 @@ final class ApplicationCoordinator: Coordinator, CoordinatorDelegate, UISplitVie
     return UIWindow(frame: UIScreen.main.bounds)
   }()
 
-  lazy var contactsFeatureDelegate = Kontacts.FeatureDelegate()
   lazy var contactsFeature: Kontacts.Feature = {
     let contactsFeature = Kontacts.Feature()
-    contactsFeature.featureDelegate = contactsFeatureDelegate
     contactsFeature.coordinatorDelegate = self
     return contactsFeature
   }()
 
+  var rootViewController: UIViewController? {
+    return self.contactsFeature.rootViewController
+  }
+
   func presentApplication() {
-    self.window.rootViewController = self.contactsFeature.rootViewController
+    self.window.rootViewController = rootViewController
     self.window.makeKeyAndVisible()
   }
 }

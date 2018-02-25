@@ -7,16 +7,18 @@ public protocol CoordinatorDelegate: class {
 }
 
 extension CoordinatorDelegate {
-  public func coordinatorDidFinish(_ coordinator: Coordinator) {}
+  public func coordinatorDidFinish(_ coordinator: Coordinator) {
+    coordinator.coordinatorDelegate?.coordinatorDidFinish(coordinator)
+  }
 }
 
-public protocol Coordinator: class {
+public protocol Coordinator: CoordinatorDelegate {
   weak var coordinatorDelegate: CoordinatorDelegate? { get set }
 }
 
 extension Coordinator {
   public weak var coordinatorDelegate: CoordinatorDelegate? {
     get { return nil }
-    set { coordinatorDelegate = newValue }
+    set { return }
   }
 }

@@ -3,8 +3,11 @@
 import Foundation
 import SQLite
 
-public struct Appointment: Codable {
-  public var uuid = UUID()
+public struct Appointment: Codable, TimeStampable {
+  public var id = UUID()
+  public var createdAt: Date?
+  public var updatedAt: Date?
+  public var deletedAt: Date?
 
   public var contacts = [Contact]()
   public var startDate: Date?
@@ -17,12 +20,17 @@ extension Appointment: SQLitePersistable {
 
 
 struct AppointmentContacts: Codable {
-  static var tableName: String {
-    return "appointment_contacts"
-  }
+  public var id = UUID()
+  public var createdAt: Date?
+  public var updatedAt: Date?
+  public var deletedAt: Date?
 }
 
 extension AppointmentContacts: SQLitePersistable {
   public typealias Storage = SQLiteDatabase
+
+  static var tableName: String {
+    return "appointment_contacts"
+  }
 }
 

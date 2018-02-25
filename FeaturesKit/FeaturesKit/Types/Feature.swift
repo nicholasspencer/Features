@@ -2,11 +2,15 @@
 
 import Foundation
 
-public protocol FeatureDelegate: class {}
+public protocol FeatureDelegate: CoordinatorDelegate {}
 
-open class Feature: Coordinator {
-  open weak var coordinatorDelegate: CoordinatorDelegate?
-  open weak var featureDelegate: FeatureDelegate?
+public protocol Feature: Coordinator {
+  weak var coordinatorDelegate: FeatureDelegate? { get set }
+}
 
-  public init() {}
+extension Feature {
+  public weak var coordinatorDelegate: FeatureDelegate? {
+    get { return nil }
+    set { return }
+  }
 }

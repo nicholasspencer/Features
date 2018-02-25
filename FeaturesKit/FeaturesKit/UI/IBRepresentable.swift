@@ -1,11 +1,13 @@
 // (ↄ) COPYLEFT ALL WRONGS RESERVED
 
 import Foundation
+import UIKit
 
 public protocol IBRepresentable: class {
   static var storyboard: UIStoryboard? { get }
   static var storyboardName: String? { get }
   static var storyboardIdentifier: String? { get }
+  static var storyboardInstance: UIViewController? { get }
 }
 
 extension IBRepresentable {
@@ -25,8 +27,8 @@ extension IBRepresentable {
 }
 
 extension IBRepresentable where Self: UIViewController {
-  public static var storyboardRepresentation: Self? {
-    guard let storyboardIdentifier = self.storyboardIdentifier else { return nil }
+  public static var storyboardInstance: Self? {
+    guard let storyboardIdentifier = Self.storyboardIdentifier else { return nil }
 
     return self.storyboard?.instantiateViewController(withIdentifier: storyboardIdentifier) as? Self ?? nil
   }

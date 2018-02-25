@@ -20,6 +20,8 @@
 		E819FC1D204259DC00F00E4A /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC08204255D500F00E4A /* Persistable.swift */; };
 		E819FC1E204259DC00F00E4A /* SQLitePersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC09204255D500F00E4A /* SQLitePersistable.swift */; };
 		E819FC1F204259DC00F00E4A /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC0A204255D500F00E4A /* SQLiteDatabase.swift */; };
+		E87816B520425F670096733C /* TimeStampable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87816B420425F670096733C /* TimeStampable.swift */; };
+		E87816BA204266EA0096733C /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87816B8204266B60096733C /* Pluralize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +37,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		E819FC122042598500F00E4A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 				E819FC18204259B300F00E4A /* SQLite.framework in CopyFiles */,
 				E819FC19204259B300F00E4A /* SQLiteMigrationManager.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -61,6 +63,8 @@
 		E819FC0F2042562400F00E4A /* Migration_2018_02_24_09_26_52_CreateTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migration_2018_02_24_09_26_52_CreateTables.swift; sourceTree = "<group>"; };
 		E819FC142042599E00F00E4A /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = ../Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 		E819FC152042599E00F00E4A /* SQLiteMigrationManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLiteMigrationManager.framework; path = ../Carthage/Build/iOS/SQLiteMigrationManager.framework; sourceTree = "<group>"; };
+		E87816B420425F670096733C /* TimeStampable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampable.swift; sourceTree = "<group>"; };
+		E87816B8204266B60096733C /* Pluralize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pluralize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +110,9 @@
 		E819FBF02042559700F00E4A /* DayPlannerKit */ = {
 			isa = PBXGroup;
 			children = (
-				E819FC102042562400F00E4A /* Migrations */,
 				E819FC0E204255F700F00E4A /* Models */,
 				E819FC0B204255D500F00E4A /* Persistence */,
+				E87816B9204266B60096733C /* Support */,
 				E819FBF12042559700F00E4A /* DayPlannerKit.h */,
 				E819FBF22042559700F00E4A /* Info.plist */,
 			);
@@ -127,6 +131,7 @@
 		E819FC0B204255D500F00E4A /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				E819FC102042562400F00E4A /* Migrations */,
 				E819FC08204255D500F00E4A /* Persistable.swift */,
 				E819FC09204255D500F00E4A /* SQLitePersistable.swift */,
 				E819FC0A204255D500F00E4A /* SQLiteDatabase.swift */,
@@ -137,6 +142,7 @@
 		E819FC0E204255F700F00E4A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E87816B320425BAE0096733C /* Attributes */,
 				E819FC0C204255F700F00E4A /* Appointment.swift */,
 				E819FC0D204255F700F00E4A /* Contact.swift */,
 			);
@@ -160,6 +166,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E87816B320425BAE0096733C /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				E87816B420425F670096733C /* TimeStampable.swift */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		E87816B9204266B60096733C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E87816B8204266B60096733C /* Pluralize.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -179,9 +201,9 @@
 			buildConfigurationList = E819FC022042559700F00E4A /* Build configuration list for PBXNativeTarget "DayPlannerKit" */;
 			buildPhases = (
 				E819FBE92042559700F00E4A /* Sources */,
+				E819FBEA2042559700F00E4A /* Frameworks */,
 				E819FC112042567700F00E4A /* ShellScript */,
 				E819FC122042598500F00E4A /* CopyFiles */,
-				E819FBEA2042559700F00E4A /* Frameworks */,
 				E819FBEB2042559700F00E4A /* Headers */,
 				E819FBEC2042559700F00E4A /* Resources */,
 			);
@@ -294,6 +316,8 @@
 			files = (
 				E819FC1C204259DC00F00E4A /* Contact.swift in Sources */,
 				E819FC1E204259DC00F00E4A /* SQLitePersistable.swift in Sources */,
+				E87816BA204266EA0096733C /* Pluralize.swift in Sources */,
+				E87816B520425F670096733C /* TimeStampable.swift in Sources */,
 				E819FC1F204259DC00F00E4A /* SQLiteDatabase.swift in Sources */,
 				E819FC1A204259DC00F00E4A /* Migration_2018_02_24_09_26_52_CreateTables.swift in Sources */,
 				E819FC1D204259DC00F00E4A /* Persistable.swift in Sources */,
@@ -371,6 +395,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,6 +451,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

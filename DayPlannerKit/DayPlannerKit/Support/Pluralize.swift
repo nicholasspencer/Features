@@ -134,7 +134,7 @@ public class Pluralize {
   }
 
   public class func apply(word: String) -> String {
-    guard !(sharedInstance.uncountables.contains(word.lowercased()) || word.characters.count == 0) else {
+    guard !(sharedInstance.uncountables.contains(word.lowercased()) || word.count == 0) else {
       return word
     }
 

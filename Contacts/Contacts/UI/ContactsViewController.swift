@@ -1,27 +1,31 @@
 // (ↄ) COPYLEFT ALL WRONGS RESERVED
 
 import UIKit
+import FeaturesKit
+import DayPlannerKit
 
-public class MasterViewController: UITableViewController {
+public protocol ContactsViewControllerDelegate: class {
+  func contactsViewControllerRequestingNewContact(_ viewController: ContactsViewController)
+  func contactsViewController(_ viewController: ContactsViewController, didSelect contact:Contact)
+}
 
-  public var detailViewController: DetailViewController? = nil
+public class ContactsViewController: UITableViewController {
+  public weak var delegate: ContactsViewControllerDelegate?
+
   public var objects = [Any]()
 
   public override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     navigationItem.leftBarButtonItem = editButtonItem
-
-    let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-    navigationItem.rightBarButtonItem = addButton
-    if let split = splitViewController {
-        let controllers = split.viewControllers
-        detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-    }
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
   }
 
   public override func viewWillAppear(_ animated: Bool) {
-    clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
+    if splitViewController!.isCollapsed,
+      let selectedIndexPath = tableView?.indexPathForSelectedRow {
+      tableView?.deselectRow(at: selectedIndexPath, animated: animated)
+    }
+
     super.viewWillAppear(animated)
   }
 
@@ -34,25 +38,26 @@ public class MasterViewController: UITableViewController {
   public func insertNewObject(_ sender: Any) {
     objects.insert(NSDate(), at: 0)
     let indexPath = IndexPath(row: 0, section: 0)
-    tableView.insertRows(at: [indexPath], with: .automatic)
+    tableView?.insertRows(at: [indexPath], with: .automatic)
   }
 
   // MARK: - Segues
 
   public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showDetail" {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let object = objects[indexPath.row] as! NSDate
-            let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-            controller.detailItem = object
-            controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-            controller.navigationItem.leftItemsSupplementBackButton = true
-        }
+      if
+        let indexPath = tableView?.indexPathForSelectedRow,
+        let object = objects[indexPath.row] as? NSDate,
+        let controller = (segue.destination as? UINavigationController)?.topViewController as? ContactViewController {
+        controller.detailItem = object
+        controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        controller.navigationItem.leftItemsSupplementBackButton = true
+      }
     }
   }
+}
 
-  // MARK: - Table View
-
+extension ContactsViewController {
   public override func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
@@ -76,13 +81,13 @@ public class MasterViewController: UITableViewController {
 
   public override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
-        objects.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .fade)
+      objects.remove(at: indexPath.row)
+      tableView.deleteRows(at: [indexPath], with: .fade)
     } else if editingStyle == .insert {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+      // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
   }
-
-
 }
+
+
 

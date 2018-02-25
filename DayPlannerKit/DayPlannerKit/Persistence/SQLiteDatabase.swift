@@ -4,7 +4,7 @@ import Foundation
 import SQLite
 import SQLiteMigrationManager
 
-public struct SQLiteDatabase {
+public final class SQLiteDatabase {
   public var connection: Connection
   fileprivate var migrator: SQLiteMigrationManager
 

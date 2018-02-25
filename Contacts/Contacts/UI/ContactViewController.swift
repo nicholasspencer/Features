@@ -2,10 +2,9 @@
 
 import UIKit
 
-public class DetailViewController: UIViewController {
+public class ContactViewController: UIViewController {
 
   @IBOutlet public weak var detailDescriptionLabel: UILabel!
-
 
   func configureView() {
     // Update the user interface for the detail item.
