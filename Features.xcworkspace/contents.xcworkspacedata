@@ -21,6 +21,9 @@
       location = "group:FeaturesKit/FeaturesKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Features/Features.xcodeproj">
+      location = "group:DayPlannerKit/DayPlannerKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/nicholasspencer/Development/Features/Features/DayPlanner.xcodeproj">
    </FileRef>
 </Workspace>

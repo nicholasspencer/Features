@@ -2,7 +2,7 @@
 
 import XCTest
 
-class FeaturesUITests: XCTestCase {
+class DayPlannerUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

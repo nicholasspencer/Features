@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E806E44B203F980200C71008"
-               BuildableName = "Features.app"
-               BlueprintName = "Features"
-               ReferencedContainer = "container:Features.xcodeproj">
+               BlueprintIdentifier = "E819FBED2042559700F00E4A"
+               BuildableName = "DayPlannerKit.framework"
+               BlueprintName = "DayPlannerKit"
+               ReferencedContainer = "container:DayPlannerKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,20 +33,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E806E45F203F980200C71008"
-               BuildableName = "FeaturesUITests.xctest"
-               BlueprintName = "FeaturesUITests"
-               ReferencedContainer = "container:Features.xcodeproj">
+               BlueprintIdentifier = "E819FBF62042559700F00E4A"
+               BuildableName = "DayPlannerKitTests.xctest"
+               BlueprintName = "DayPlannerKitTests"
+               ReferencedContainer = "container:DayPlannerKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E806E44B203F980200C71008"
-            BuildableName = "Features.app"
-            BlueprintName = "Features"
-            ReferencedContainer = "container:Features.xcodeproj">
+            BlueprintIdentifier = "E819FBED2042559700F00E4A"
+            BuildableName = "DayPlannerKit.framework"
+            BlueprintName = "DayPlannerKit"
+            ReferencedContainer = "container:DayPlannerKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,16 +63,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E806E44B203F980200C71008"
-            BuildableName = "Features.app"
-            BlueprintName = "Features"
-            ReferencedContainer = "container:Features.xcodeproj">
+            BlueprintIdentifier = "E819FBED2042559700F00E4A"
+            BuildableName = "DayPlannerKit.framework"
+            BlueprintName = "DayPlannerKit"
+            ReferencedContainer = "container:DayPlannerKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -82,16 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E806E44B203F980200C71008"
-            BuildableName = "Features.app"
-            BlueprintName = "Features"
-            ReferencedContainer = "container:Features.xcodeproj">
+            BlueprintIdentifier = "E819FBED2042559700F00E4A"
+            BuildableName = "DayPlannerKit.framework"
+            BlueprintName = "DayPlannerKit"
+            ReferencedContainer = "container:DayPlannerKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -12,10 +12,11 @@
 		E806E455203F980200C71008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E806E453203F980200C71008 /* Main.storyboard */; };
 		E806E457203F980200C71008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E806E456203F980200C71008 /* Assets.xcassets */; };
 		E806E45A203F980200C71008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E806E458203F980200C71008 /* LaunchScreen.storyboard */; };
-		E806E465203F980200C71008 /* FeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E464203F980200C71008 /* FeaturesUITests.swift */; };
+		E806E465203F980200C71008 /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806E464203F980200C71008 /* DayPlannerUITests.swift */; };
 		E806E49C203FA72300C71008 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E806E49D203FA72300C71008 /* FeaturesKit.framework */; };
 		E8119534203FA83600BB5682 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8119533203FA83600BB5682 /* ApplicationCoordinator.swift */; };
 		E8119536203FB2F500BB5682 /* FeaturesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8119535203FB2F500BB5682 /* FeaturesCoordinator.swift */; };
+		E819FC20204259FE00F00E4A /* DayPlannerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E819FC21204259FE00F00E4A /* DayPlannerKit.framework */; };
 		E8C611A9203FC74A004F96E3 /* Appointments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611AB203FC74A004F96E3 /* Appointments.framework */; };
 		E8C611F9203FEE3B004F96E3 /* Kontacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C611FA203FEE3B004F96E3 /* Kontacts.framework */; };
 /* End PBXBuildFile section */
@@ -31,19 +32,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E806E44C203F980200C71008 /* Features.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Features.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E806E44C203F980200C71008 /* DayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E806E44F203F980200C71008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E806E451203F980200C71008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E806E454203F980200C71008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E806E456203F980200C71008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E806E459203F980200C71008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E806E45B203F980200C71008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E806E460203F980200C71008 /* FeaturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeaturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E806E464203F980200C71008 /* FeaturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesUITests.swift; sourceTree = "<group>"; };
+		E806E460203F980200C71008 /* DayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E806E464203F980200C71008 /* DayPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerUITests.swift; sourceTree = "<group>"; };
 		E806E466203F980200C71008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E806E49D203FA72300C71008 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8119533203FA83600BB5682 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		E8119535203FB2F500BB5682 /* FeaturesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesCoordinator.swift; sourceTree = "<group>"; };
+		E819FC21204259FE00F00E4A /* DayPlannerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DayPlannerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611AB203FC74A004F96E3 /* Appointments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Appointments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611AC203FC74A004F96E3 /* Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611FA203FEE3B004F96E3 /* Kontacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kontacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E806E49C203FA72300C71008 /* FeaturesKit.framework in Frameworks */,
+				E819FC20204259FE00F00E4A /* DayPlannerKit.framework in Frameworks */,
 				E8C611F9203FEE3B004F96E3 /* Kontacts.framework in Frameworks */,
 				E8C611A9203FC74A004F96E3 /* Appointments.framework in Frameworks */,
 			);
@@ -73,8 +76,8 @@
 		E806E443203F980200C71008 = {
 			isa = PBXGroup;
 			children = (
-				E806E44E203F980200C71008 /* Features */,
-				E806E463203F980200C71008 /* FeaturesUITests */,
+				E806E44E203F980200C71008 /* DayPlanner */,
+				E806E463203F980200C71008 /* DayPlannerUITests */,
 				E806E44D203F980200C71008 /* Products */,
 				E806E49B203FA72300C71008 /* Frameworks */,
 			);
@@ -83,13 +86,13 @@
 		E806E44D203F980200C71008 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E806E44C203F980200C71008 /* Features.app */,
-				E806E460203F980200C71008 /* FeaturesUITests.xctest */,
+				E806E44C203F980200C71008 /* DayPlanner.app */,
+				E806E460203F980200C71008 /* DayPlannerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E806E44E203F980200C71008 /* Features */ = {
+		E806E44E203F980200C71008 /* DayPlanner */ = {
 			isa = PBXGroup;
 			children = (
 				E806E49E203FA7FC00C71008 /* Coordinators */,
@@ -100,21 +103,22 @@
 				E806E458203F980200C71008 /* LaunchScreen.storyboard */,
 				E806E45B203F980200C71008 /* Info.plist */,
 			);
-			path = Features;
+			path = DayPlanner;
 			sourceTree = "<group>";
 		};
-		E806E463203F980200C71008 /* FeaturesUITests */ = {
+		E806E463203F980200C71008 /* DayPlannerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E806E464203F980200C71008 /* FeaturesUITests.swift */,
+				E806E464203F980200C71008 /* DayPlannerUITests.swift */,
 				E806E466203F980200C71008 /* Info.plist */,
 			);
-			path = FeaturesUITests;
+			path = DayPlannerUITests;
 			sourceTree = "<group>";
 		};
 		E806E49B203FA72300C71008 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E819FC21204259FE00F00E4A /* DayPlannerKit.framework */,
 				E8C611FA203FEE3B004F96E3 /* Kontacts.framework */,
 				E8C611AB203FC74A004F96E3 /* Appointments.framework */,
 				E8C611AC203FC74A004F96E3 /* Contacts.framework */,
@@ -135,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E806E44B203F980200C71008 /* Features */ = {
+		E806E44B203F980200C71008 /* DayPlanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E806E469203F980200C71008 /* Build configuration list for PBXNativeTarget "Features" */;
+			buildConfigurationList = E806E469203F980200C71008 /* Build configuration list for PBXNativeTarget "DayPlanner" */;
 			buildPhases = (
 				E806E448203F980200C71008 /* Sources */,
 				E806E449203F980200C71008 /* Frameworks */,
@@ -147,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = Features;
+			name = DayPlanner;
 			productName = Features;
-			productReference = E806E44C203F980200C71008 /* Features.app */;
+			productReference = E806E44C203F980200C71008 /* DayPlanner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E806E45F203F980200C71008 /* FeaturesUITests */ = {
+		E806E45F203F980200C71008 /* DayPlannerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E806E46C203F980200C71008 /* Build configuration list for PBXNativeTarget "FeaturesUITests" */;
+			buildConfigurationList = E806E46C203F980200C71008 /* Build configuration list for PBXNativeTarget "DayPlannerUITests" */;
 			buildPhases = (
 				E806E45C203F980200C71008 /* Sources */,
 				E806E45D203F980200C71008 /* Frameworks */,
@@ -165,9 +169,9 @@
 			dependencies = (
 				E806E462203F980200C71008 /* PBXTargetDependency */,
 			);
-			name = FeaturesUITests;
+			name = DayPlannerUITests;
 			productName = FeaturesUITests;
-			productReference = E806E460203F980200C71008 /* FeaturesUITests.xctest */;
+			productReference = E806E460203F980200C71008 /* DayPlannerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E806E447203F980200C71008 /* Build configuration list for PBXProject "Features" */;
+			buildConfigurationList = E806E447203F980200C71008 /* Build configuration list for PBXProject "DayPlanner" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,8 +208,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E806E44B203F980200C71008 /* Features */,
-				E806E45F203F980200C71008 /* FeaturesUITests */,
+				E806E44B203F980200C71008 /* DayPlanner */,
+				E806E45F203F980200C71008 /* DayPlannerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E806E465203F980200C71008 /* FeaturesUITests.swift in Sources */,
+				E806E465203F980200C71008 /* DayPlannerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +259,7 @@
 /* Begin PBXTargetDependency section */
 		E806E462203F980200C71008 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E806E44B203F980200C71008 /* Features */;
+			target = E806E44B203F980200C71008 /* DayPlanner */;
 			targetProxy = E806E461203F980200C71008 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,7 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D82YXVJWMT;
-				INFOPLIST_FILE = Features/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DayPlanner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasspencer.Features;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D82YXVJWMT;
-				INFOPLIST_FILE = Features/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DayPlanner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasspencer.Features;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E806E447203F980200C71008 /* Build configuration list for PBXProject "Features" */ = {
+		E806E447203F980200C71008 /* Build configuration list for PBXProject "DayPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E806E467203F980200C71008 /* Debug */,
@@ -461,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E806E469203F980200C71008 /* Build configuration list for PBXNativeTarget "Features" */ = {
+		E806E469203F980200C71008 /* Build configuration list for PBXNativeTarget "DayPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E806E46A203F980200C71008 /* Debug */,
@@ -470,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E806E46C203F980200C71008 /* Build configuration list for PBXNativeTarget "FeaturesUITests" */ = {
+		E806E46C203F980200C71008 /* Build configuration list for PBXNativeTarget "DayPlannerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E806E46D203F980200C71008 /* Debug */,

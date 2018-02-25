@@ -2,6 +2,7 @@
 
 import Foundation
 import SQLite
+import FeaturesKit
 
 protocol SQLitePersistable: Persistable where Storage.type == SQLiteDatabase {
   static var table: Table { get }
