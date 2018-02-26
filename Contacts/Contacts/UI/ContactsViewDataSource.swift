@@ -18,6 +18,10 @@ public class ContactsViewDataSource: NSObject, UITableViewDataSource {
 
   private var contacts = [Contact]()
 
+  public func contact(at indexPath: IndexPath) -> Contact? {
+    return contacts[indexPath.row]
+  }
+
   public func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
@@ -28,8 +32,8 @@ public class ContactsViewDataSource: NSObject, UITableViewDataSource {
 
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    let contact = contacts[indexPath.row]
-    cell.textLabel!.text = contact.name
+    let contact = self.contact(at: indexPath)
+    cell.textLabel?.text = contact?.name
     return cell
   }
 

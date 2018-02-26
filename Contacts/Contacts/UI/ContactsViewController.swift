@@ -11,7 +11,11 @@ public protocol ContactsViewControllerDelegate: class {
 
 public class ContactsViewController: UIViewController {
   public weak var delegate: ContactsViewControllerDelegate?
-  public weak var dataSource: UITableViewDataSource?
+  public weak var dataSource: ContactsViewDataSource? {
+    didSet {
+      tableView?.dataSource = dataSource
+    }
+  }
 
   @IBOutlet var tableView: UITableView?
 
@@ -50,9 +54,9 @@ public class ContactsViewController: UIViewController {
     if segue.identifier == "showDetail" {
       if
         let indexPath = tableView?.indexPathForSelectedRow,
-//        let object = objects[indexPath.row] as? NSDate,
+        let contact = self.dataSource?.contact(at: indexPath),
         let controller = (segue.destination as? UINavigationController)?.topViewController as? ContactViewController {
-//        controller.detailItem = object
+        controller.contact = contact
         controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
         controller.navigationItem.leftItemsSupplementBackButton = true
       }
