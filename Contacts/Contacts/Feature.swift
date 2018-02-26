@@ -56,7 +56,7 @@ extension Feature: UISplitViewControllerDelegate {
   }
 }
 
-extension Feature: IBRepresentable {
+extension Feature: IBRepresentableStoryboard {
   public static var storyboardName: String? {
     return "Main"
   }

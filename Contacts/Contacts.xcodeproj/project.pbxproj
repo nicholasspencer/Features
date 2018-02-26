@@ -11,6 +11,8 @@
 		E87816B62042662C0096733C /* DayPlannerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87816B72042662C0096733C /* DayPlannerKit.framework */; };
 		E88CA57420409947008F39D8 /* FeaturesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88CA57520409948008F39D8 /* FeaturesKit.framework */; };
 		E8B4296B2041E8CC0052B09C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */; };
+		E8B851252043BE65007127DC /* EditContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B851242043BE65007127DC /* EditContactViewController.xib */; };
+		E8B851272043BE80007127DC /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B851262043BE80007127DC /* EditContactViewController.swift */; };
 		E8C6118F203FC3AF004F96E3 /* Kontacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61185203FC3AF004F96E3 /* Kontacts.framework */; };
 		E8C61194203FC3AF004F96E3 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61193203FC3AF004F96E3 /* ContactsTests.swift */; };
 		E8C611A8203FC710004F96E3 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A7203FC710004F96E3 /* Feature.swift */; };
@@ -46,6 +48,8 @@
 		E87816B72042662C0096733C /* DayPlannerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DayPlannerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88CA57520409948008F39D8 /* FeaturesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeaturesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B4296A2041E8CC0052B09C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		E8B851242043BE65007127DC /* EditContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditContactViewController.xib; sourceTree = "<group>"; };
+		E8B851262043BE80007127DC /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		E8C61185203FC3AF004F96E3 /* Kontacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kontacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C61189203FC3AF004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C6118E203FC3AF004F96E3 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,8 @@
 				E8C611E3203FEB36004F96E3 /* ContactsViewController.swift */,
 				E85BB59F20437EB1003D887F /* ContactsViewDataSource.swift */,
 				E8C611E5203FEB36004F96E3 /* ContactViewController.swift */,
+				E8B851242043BE65007127DC /* EditContactViewController.xib */,
+				E8B851262043BE80007127DC /* EditContactViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C61205203FFA96004F96E3 /* Main.storyboard in Resources */,
+				E8B851252043BE65007127DC /* EditContactViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B851272043BE80007127DC /* EditContactViewController.swift in Sources */,
 				E85BB5A020437EB1003D887F /* ContactsViewDataSource.swift in Sources */,
 				E8C611A8203FC710004F96E3 /* Feature.swift in Sources */,
 				E8C61200203FF2FC004F96E3 /* ContactViewController.swift in Sources */,

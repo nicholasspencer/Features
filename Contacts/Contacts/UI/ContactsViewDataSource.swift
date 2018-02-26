@@ -3,7 +3,7 @@
 import Foundation
 import DayPlannerKit
 
-public final class ContactsViewDataSource: NSObject, UITableViewDataSource {
+public class ContactsViewDataSource: NSObject, UITableViewDataSource {
   public var database: SQLiteDatabase? {
     didSet {
       if let database = database {
