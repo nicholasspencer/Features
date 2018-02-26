@@ -33,6 +33,9 @@ public class ContactsViewController: UIViewController {
       tableView?.deselectRow(at: selectedIndexPath, animated: animated)
     }
 
+    self.dataSource?.reloadData()
+    self.tableView?.reloadData()
+
     super.viewWillAppear(animated)
   }
 
@@ -43,9 +46,7 @@ public class ContactsViewController: UIViewController {
 
   @objc
   public func insertNewObject(_ sender: Any) {
-//    objects.insert(NSDate(), at: 0)
-//    let indexPath = IndexPath(row: 0, section: 0)
-//    tableView?.insertRows(at: [indexPath], with: .automatic)
+    self.delegate?.contactsViewControllerRequestingNewContact(self)
   }
 
   // MARK: - Segues
@@ -56,6 +57,7 @@ public class ContactsViewController: UIViewController {
         let indexPath = tableView?.indexPathForSelectedRow,
         let contact = self.dataSource?.contact(at: indexPath),
         let controller = (segue.destination as? UINavigationController)?.topViewController as? ContactViewController {
+        self.delegate?.contactsViewController(self, didSelect: contact)
         controller.contact = contact
         controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
         controller.navigationItem.leftItemsSupplementBackButton = true

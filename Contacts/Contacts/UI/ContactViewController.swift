@@ -10,8 +10,13 @@ public class ContactViewController: UIViewController {
   @IBOutlet public weak var phoneLabel: UILabel?
   @IBOutlet public weak var favoriteButton: FavoriteButton?
 
+  public var contact: Contact? {
+    didSet {
+      configureView()
+    }
+  }
+
   func configureView() {
-    // Update the user interface for the detail item.
     guard let contact = contact else { return }
 
     self.nameLabel?.text = contact.name
@@ -31,13 +36,20 @@ public class ContactViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  public var contact: Contact? {
-    didSet {
-        // Update the view.
-        configureView()
+  @IBAction func toggleFavorite(_ sender: FavoriteButton) {
+    guard let contact = contact else { return }
+
+    let favorite = !contact.favorite
+
+    self.contact?.favorite = favorite
+
+    do {
+      self.contact = try self.contact?.save()
+    } catch {
+      print(error)
+      self.contact = contact
     }
   }
-
 
 }
 

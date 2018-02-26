@@ -2,7 +2,21 @@
 
 import Foundation
 
-public struct Contact: Codable, TimeStampable {
+public struct Contact: Codable, Identifiable, TimeStampable {
+  private enum CodingKeys: String, CodingKey {
+    case id
+    case createdAt
+    case updatedAt
+    case deletedAt
+
+    case name
+    case address
+    case phone
+    case favorite
+  }
+
+  public var database: SQLiteDatabase? = nil
+
   public var id: Int?
   public var createdAt: Date?
   public var updatedAt: Date?
@@ -12,8 +26,8 @@ public struct Contact: Codable, TimeStampable {
   public var address: String?
   public var phone: String?
   public var favorite: Bool = false
+
+  public init() {}
 }
 
-extension Contact: SQLitePersistable {
-  public typealias Storage = SQLiteDatabase
-}
+extension Contact: SQLitePersistable {}

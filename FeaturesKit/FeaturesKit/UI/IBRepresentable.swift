@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-typealias IBRepresentable = IBRepresentableStoryboard & IBRepresentableNib
+public typealias IBRepresentable = IBRepresentableStoryboard & IBRepresentableNib
 
 public protocol IBRepresentableStoryboard: class {
   static var storyboard: UIStoryboard? { get }
@@ -64,21 +64,21 @@ extension IBRepresentableNib {
   }
 }
 
-public protocol NibRepresentableViewController: IBRepresentableNib where Self: UIViewController {
+public protocol IBRepresentableNibViewController: IBRepresentableNib where Self: UIViewController {
   static var nibInstance: UIViewController? { get }
 }
 
-extension NibRepresentableViewController {
+extension IBRepresentableNibViewController {
   public static var nibInstance: UIViewController? {
     return Self(nibName: nibName, bundle: Bundle(for: self))
   }
 }
 
-public protocol NibRepresentableView: IBRepresentableNib where Self: UIView {
+public protocol IBRepresentableNibView: IBRepresentableNib where Self: UIView {
   static var nibInstance: UIView? { get }
 }
 
-extension NibRepresentableView {
+extension IBRepresentableNibView {
   public static var nibInstance: UIView? {
     return self.nib?.instantiate(withOwner: nil, options: nil).first as? Self
   }

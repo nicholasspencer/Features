@@ -8,7 +8,10 @@ public class FavoriteButton: UIButton {
   @IBInspectable
   public var favorite: Bool = false {
     didSet {
-      self.titleLabel?.text = favorite ? "😍" : "🙂"
+      self.setTitle(favorite ? "😍" : "🙂", for: .normal)
+      self.setTitle(favorite ? "😍" : "🙂", for: .highlighted)
+      self.setTitle(favorite ? "😍" : "🙂", for: .disabled)
+      self.setTitle(favorite ? "😍" : "🙂", for: .selected)
     }
   }
   

@@ -17,12 +17,12 @@
 		E819FC1A204259DC00F00E4A /* Migration_2018_02_24_09_26_52_CreateTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC0F2042562400F00E4A /* Migration_2018_02_24_09_26_52_CreateTables.swift */; };
 		E819FC1B204259DC00F00E4A /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC0C204255F700F00E4A /* Appointment.swift */; };
 		E819FC1C204259DC00F00E4A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC0D204255F700F00E4A /* Contact.swift */; };
-		E819FC1D204259DC00F00E4A /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC08204255D500F00E4A /* Persistable.swift */; };
 		E819FC1E204259DC00F00E4A /* SQLitePersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC09204255D500F00E4A /* SQLitePersistable.swift */; };
 		E819FC1F204259DC00F00E4A /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819FC0A204255D500F00E4A /* SQLiteDatabase.swift */; };
 		E85BB5A320437F73003D887F /* Migration_2018_02_25_23_32_46_SeedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85BB5A220437F73003D887F /* Migration_2018_02_25_23_32_46_SeedContacts.swift */; };
 		E87816B520425F670096733C /* TimeStampable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87816B420425F670096733C /* TimeStampable.swift */; };
 		E87816BA204266EA0096733C /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87816B8204266B60096733C /* Pluralize.swift */; };
+		E8DB922920442869002BA754 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB922820442869002BA754 /* Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,6 @@
 		E819FBF72042559700F00E4A /* DayPlannerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E819FBFC2042559700F00E4A /* DayPlannerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerKitTests.swift; sourceTree = "<group>"; };
 		E819FBFE2042559700F00E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E819FC08204255D500F00E4A /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
 		E819FC09204255D500F00E4A /* SQLitePersistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLitePersistable.swift; sourceTree = "<group>"; };
 		E819FC0A204255D500F00E4A /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
 		E819FC0C204255F700F00E4A /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		E85BB5A220437F73003D887F /* Migration_2018_02_25_23_32_46_SeedContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migration_2018_02_25_23_32_46_SeedContacts.swift; sourceTree = "<group>"; };
 		E87816B420425F670096733C /* TimeStampable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampable.swift; sourceTree = "<group>"; };
 		E87816B8204266B60096733C /* Pluralize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pluralize.swift; sourceTree = "<group>"; };
+		E8DB922820442869002BA754 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,6 @@
 			children = (
 				E85BB5A120437F4C003D887F /* Seeds */,
 				E819FC102042562400F00E4A /* Migrations */,
-				E819FC08204255D500F00E4A /* Persistable.swift */,
 				E819FC09204255D500F00E4A /* SQLitePersistable.swift */,
 				E819FC0A204255D500F00E4A /* SQLiteDatabase.swift */,
 			);
@@ -181,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				E87816B420425F670096733C /* TimeStampable.swift */,
+				E8DB922820442869002BA754 /* Identifiable.swift */,
 			);
 			path = Attributes;
 			sourceTree = "<group>";
@@ -329,10 +329,10 @@
 				E819FC1E204259DC00F00E4A /* SQLitePersistable.swift in Sources */,
 				E87816BA204266EA0096733C /* Pluralize.swift in Sources */,
 				E85BB5A320437F73003D887F /* Migration_2018_02_25_23_32_46_SeedContacts.swift in Sources */,
+				E8DB922920442869002BA754 /* Identifiable.swift in Sources */,
 				E87816B520425F670096733C /* TimeStampable.swift in Sources */,
 				E819FC1F204259DC00F00E4A /* SQLiteDatabase.swift in Sources */,
 				E819FC1A204259DC00F00E4A /* Migration_2018_02_24_09_26_52_CreateTables.swift in Sources */,
-				E819FC1D204259DC00F00E4A /* Persistable.swift in Sources */,
 				E819FC1B204259DC00F00E4A /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

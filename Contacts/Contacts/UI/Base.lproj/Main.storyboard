@@ -36,40 +36,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kBD-6R-dj0">
-                                <rect key="frame" x="20" y="84" width="335" height="97.5"/>
+                                <rect key="frame" x="20" y="84" width="335" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvN-Ka-KNM">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWp-sQ-Pd5">
-                                                <rect key="frame" x="0.0" y="0.0" width="296.5" height="38.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQu-PL-txZ" customClass="FavoriteButton" customModule="Kontacts" customModuleProvider="target">
-                                                <rect key="frame" x="296.5" y="0.0" width="38.5" height="38.5"/>
-                                                <state key="normal" title="🙂">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQu-PL-txZ" customClass="FavoriteButton" customModule="Kontacts" customModuleProvider="target">
+                                                <rect key="frame" x="294" y="0.0" width="41" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yQu-PL-txZ" secondAttribute="height" multiplier="1:1" id="4u4-Ht-TPu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="favorite" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="toggleFavorite:" destination="JEX-9P-axG" eventType="touchUpInside" id="bWc-yu-F9e"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="yQu-PL-txZ" firstAttribute="height" secondItem="hvN-Ka-KNM" secondAttribute="height" id="adF-UY-cMO"/>
-                                            <constraint firstItem="yQu-PL-txZ" firstAttribute="width" secondItem="hvN-Ka-KNM" secondAttribute="height" id="efT-64-UFW"/>
-                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mg-Fh-K0B">
-                                        <rect key="frame" x="0.0" y="46.5" width="335" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="49" width="335" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6t-ye-2MU">
-                                        <rect key="frame" x="0.0" y="76" width="335" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="335" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>

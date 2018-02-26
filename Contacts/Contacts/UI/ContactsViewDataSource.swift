@@ -6,13 +6,17 @@ import DayPlannerKit
 public class ContactsViewDataSource: NSObject, UITableViewDataSource {
   public var database: SQLiteDatabase? {
     didSet {
-      if let database = database {
-        try? Contact.findAll(in: database) { (contacts) in
-          self.contacts = contacts
-        }
-      } else {
-        contacts.removeAll()
-      }
+      self.reloadData()
+    }
+  }
+
+  public func reloadData() {
+    if
+      let database = database,
+      let contacts = try? Contact.findAll(in: database) {
+      self.contacts = contacts
+    } else {
+      contacts.removeAll()
     }
   }
 
