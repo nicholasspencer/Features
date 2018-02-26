@@ -1,10 +1,9 @@
 // (ↄ) COPYLEFT ALL WRONGS RESERVED
 
 import Foundation
-import SQLite
 
 public struct Appointment: Codable, TimeStampable {
-  public var id = UUID()
+  public var id: Int?
   public var createdAt: Date?
   public var updatedAt: Date?
   public var deletedAt: Date?
@@ -20,7 +19,7 @@ extension Appointment: SQLitePersistable {
 
 
 struct AppointmentContacts: Codable {
-  public var id = UUID()
+  public var id: Int?
   public var createdAt: Date?
   public var updatedAt: Date?
   public var deletedAt: Date?

@@ -2,36 +2,45 @@
 
 import Foundation
 import UIKit
+
 import FeaturesKit
+import DayPlannerKit
 
 public protocol FeatureDelegate: FeaturesKit.FeatureDelegate {}
 
 public final class Feature: FeaturesKit.Feature {
   public weak var coordinatorDelegate: FeatureDelegate?
 
+  public lazy var rootViewController: UIViewController? = self.storyboardInstance?.instantiateInitialViewController()
+
+  public var database: SQLiteDatabase? {
+    didSet {
+      contactsDataSource?.database = database
+      contactsViewController?.tableView?.reloadData()
+    }
+  }
+
   public init() {
     splitViewController?.delegate = self
     navigationController?.topViewController?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+    contactsViewController?.dataSource = self.contactsDataSource
   }
-
-  public lazy var rootViewController: UIViewController? = {
-    return self.storyboardInstance?.instantiateInitialViewController()
-  }()
 
   private lazy var storyboardInstance: UIStoryboard? = Feature.storyboard
+  private lazy var contactsDataSource: ContactsViewDataSource? = {
+    let contactsDataSource = ContactsViewDataSource()
+    contactsDataSource.database = database
+    return contactsDataSource
+  }()
+}
 
-  private var splitViewController: UISplitViewController? {
-    guard let splitViewController = rootViewController as? UISplitViewController else { return nil }
+extension Feature: ContactsViewControllerDelegate {
+  public func contactsViewControllerRequestingNewContact(_ viewController: ContactsViewController) {
 
-    return splitViewController
   }
 
-  private var navigationController: UINavigationController? {
-    guard
-      let splitViewController = splitViewController,
-      let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as? UINavigationController else { return nil }
+  public func contactsViewController(_ viewController: ContactsViewController, didSelect contact: Contact) {
 
-    return navigationController
   }
 }
 
@@ -54,5 +63,49 @@ extension Feature: IBRepresentable {
   
   public static var storyboardInstance: UIViewController? {
     return storyboard?.instantiateInitialViewController()
+  }
+
+  private var splitViewController: UISplitViewController? {
+    guard let splitViewController = rootViewController as? UISplitViewController else { return nil }
+
+    splitViewController.delegate = self
+
+    return splitViewController
+  }
+
+  private var contactsNavigationController: UINavigationController? {
+    guard
+      let splitViewController = splitViewController,
+      let navigationController = splitViewController.viewControllers.first as? UINavigationController else { return nil }
+
+    return navigationController
+  }
+
+  private var contactsViewController: ContactsViewController? {
+    guard
+      let navigationController = contactsNavigationController,
+      let contactsViewController = navigationController.viewControllers.first as? ContactsViewController else { return nil }
+
+    contactsViewController.dataSource = contactsDataSource
+
+    return contactsViewController
+  }
+
+  private var navigationController: UINavigationController? {
+    guard
+      let splitViewController = splitViewController,
+      let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as? UINavigationController else { return nil }
+
+    navigationController.topViewController?.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+
+    return navigationController
+  }
+
+  private var contactViewController: ContactViewController? {
+    guard
+      let navigationController = navigationController,
+      let contactViewController = navigationController.viewControllers.first as? ContactViewController else { return nil }
+
+    return contactViewController
   }
 }

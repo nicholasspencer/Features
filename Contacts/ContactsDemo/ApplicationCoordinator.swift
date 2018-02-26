@@ -12,10 +12,13 @@ final class ApplicationCoordinator: Coordinator {
   var coordinatorDelegate: CoordinatorDelegate?
 
   lazy var database: SQLiteDatabase? = {
-    guard
-      let database = try? SQLiteDatabase(),
-      let _ = try? database.prepare()
-    else { return nil }
+    guard let database = try? SQLiteDatabase() else { return nil }
+
+    do {
+      try database.prepare()
+    } catch {
+      print("Database initialization and preperation failed \(error)")
+    }
 
     return database
   }()
@@ -27,6 +30,7 @@ final class ApplicationCoordinator: Coordinator {
   lazy var contactsFeature: Kontacts.Feature = {
     let contactsFeature = Kontacts.Feature()
     contactsFeature.coordinatorDelegate = self
+    contactsFeature.database = self.database
     return contactsFeature
   }()
 

@@ -3,7 +3,7 @@
 import Foundation
 
 public struct Contact: Codable, TimeStampable {
-  public var id = UUID()
+  public var id: Int?
   public var createdAt: Date?
   public var updatedAt: Date?
   public var deletedAt: Date?

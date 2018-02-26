@@ -42,6 +42,7 @@ extension SQLiteDatabase {
   fileprivate static var migrations: [Migration] {
     return [
       Migration_2018_02_24_09_26_52_CreateTables(),
+      Migration_2018_02_25_23_32_46_SeedContacts(),
     ]
   }
 }
