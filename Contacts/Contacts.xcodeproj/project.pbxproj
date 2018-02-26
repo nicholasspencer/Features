@@ -16,7 +16,7 @@
 		E8B851292043DDA3007127DC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B851282043DDA3007127DC /* FavoriteButton.swift */; };
 		E8C6118F203FC3AF004F96E3 /* Kontacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C61185203FC3AF004F96E3 /* Kontacts.framework */; };
 		E8C61194203FC3AF004F96E3 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C61193203FC3AF004F96E3 /* ContactsTests.swift */; };
-		E8C611A8203FC710004F96E3 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A7203FC710004F96E3 /* Feature.swift */; };
+		E8C611A8203FC710004F96E3 /* FeatureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611A7203FC710004F96E3 /* FeatureCoordinator.swift */; };
 		E8C611E2203FEB36004F96E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C611E1203FEB36004F96E3 /* AppDelegate.swift */; };
 		E8C611EB203FEB36004F96E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C611EA203FEB36004F96E3 /* Assets.xcassets */; };
 		E8C611EE203FEB36004F96E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C611EC203FEB36004F96E3 /* LaunchScreen.storyboard */; };
@@ -57,7 +57,7 @@
 		E8C6118E203FC3AF004F96E3 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C61193203FC3AF004F96E3 /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
 		E8C61195203FC3AF004F96E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8C611A7203FC710004F96E3 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		E8C611A7203FC710004F96E3 /* FeatureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCoordinator.swift; sourceTree = "<group>"; };
 		E8C611DF203FEB36004F96E3 /* ContactsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C611E1203FEB36004F96E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8C611E3203FEB36004F96E3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				E8C611FF203FF29E004F96E3 /* UI */,
-				E8C611A7203FC710004F96E3 /* Feature.swift */,
+				E8C611A7203FC710004F96E3 /* FeatureCoordinator.swift */,
 				E8C61189203FC3AF004F96E3 /* Info.plist */,
 			);
 			path = Contacts;
@@ -322,7 +322,7 @@
 			files = (
 				E8B851272043BE80007127DC /* EditContactViewController.swift in Sources */,
 				E85BB5A020437EB1003D887F /* ContactsViewDataSource.swift in Sources */,
-				E8C611A8203FC710004F96E3 /* Feature.swift in Sources */,
+				E8C611A8203FC710004F96E3 /* FeatureCoordinator.swift in Sources */,
 				E8B851292043DDA3007127DC /* FavoriteButton.swift in Sources */,
 				E8C61200203FF2FC004F96E3 /* ContactViewController.swift in Sources */,
 				E8C61201203FF2FF004F96E3 /* ContactsViewController.swift in Sources */,

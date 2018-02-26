@@ -6,9 +6,9 @@ import UIKit
 import FeaturesKit
 import DayPlannerKit
 
-public protocol FeatureDelegate: FeaturesKit.FeatureDelegate {}
+public protocol FeatureDelegate: FeaturesKit.FeatureCoordinatorDelegate {}
 
-public final class Feature: FeaturesKit.Feature {
+public final class Feature: FeaturesKit.FeatureCoordinator {
   public weak var coordinatorDelegate: FeatureDelegate?
 
   public lazy var rootViewController: UIViewController? = self.storyboardInstance?.instantiateInitialViewController()

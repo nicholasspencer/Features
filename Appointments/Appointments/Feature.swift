@@ -3,7 +3,7 @@
 import Foundation
 import FeaturesKit
 
-public final class FeatureDelegate: FeaturesKit.FeatureDelegate {
+public final class FeatureDelegate: FeaturesKit.FeatureCoordinatorDelegate {
   public init() {}
 }
 
